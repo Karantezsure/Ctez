@@ -76,6 +76,16 @@ app.get('/ovens', (req, res)=>{
   const data = fs.readFileSync(config.Oven_DATA);
   res.json(JSON.parse(data));
 })
+
+app.get('/main_data/drift', (req, res)=>{
+  const data = fs.readFileSync(config.Drift_DATA);
+  res.json(JSON.parse(data));
+})
+
+app.get('/main_data/target', (req, res)=>{
+  const data = fs.readFileSync(config.Target_DATA_One);
+  res.json(JSON.parse(data));
+})
   // app.get("/tokens_statistical_data", async function (req, res) {
   //   const data = fs.readFileSync(config.TOKEN_PAGE_STATISTICAL_DATA);
   //   res.json(JSON.parse(data));
