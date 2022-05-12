@@ -92,7 +92,7 @@ app.get('/tvl', (req, res)=>{
   res.json(JSON.parse(data));
 })
 
-app.get('/volume', (req, res)=>{
+app.get('/volume_stats', (req, res)=>{
   const data = fs.readFileSync(config.Volume_DATA);
   res.json(JSON.parse(data));
 })
@@ -104,6 +104,11 @@ app.get('/ovens_graph', (req, res)=>{
 
 app.get('/summary', (req, res)=>{
   const data = fs.readFileSync(config.Summary_DATA);
+  res.json(JSON.parse(data));
+})
+
+app.get('/price_stats', (req, res)=>{
+  const data = fs.readFileSync(config.Price_DATA);
   res.json(JSON.parse(data));
 })
 

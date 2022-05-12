@@ -19,4 +19,5 @@ module.exports = {
     Target_DATA_One: "data/Main_Data/TargetOne_data.json",
     Tvl_DATA: "data/Tvl_Data/Tvl_data.json",
     Volume_DATA: "data/Volume_Data/Volume_data.json",
+    Price_DATA: "data/Price_Data/Price_data.json",
 }
